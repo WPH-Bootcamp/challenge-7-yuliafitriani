@@ -13,7 +13,7 @@ const SubHeaderText: React.FC<TextProps> = ({
   size = "md",
   className = "",
 }) => {
-  const baseStyle = "text-neutral-400 text-center block w-full";
+  const baseStyle = "text-neutral-400 block w-full";
 
   const sizeStyle: Record<TextSize, string> = {
     sm: "h-[56px] text-sm",

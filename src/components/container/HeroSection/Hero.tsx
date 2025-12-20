@@ -42,7 +42,7 @@ const Hero = () => {
         {/* Light */}
         <img
           src="/assets/images/hero.jpg"
-          className="md:absolute md:top-0 md:right-4 md:max-h-[800px] md:h-[700px] dark:hidden"
+          className="md:absolute md:top-0 md:right-0 md:max-h-[800px] md:h-[700px] dark:hidden"
           alt="Your Tech Partner"
         />
 

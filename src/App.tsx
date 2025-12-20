@@ -1,7 +1,14 @@
 import Header from "./components/container/HeaderSection";
 import Hero from "./components/container/HeroSection";
-import LogoMarquee from "./components/container/Marquee";
-import AchievementSection from "./components/container/AchievementSection/Achievement";
+import LogoMarquee from "./components/container/MarqueeSection";
+import Achievement from "./components/container/AchievementSection";
+import OurProcess from "./components/container/OurProcessSection";
+import Solution from "./components/container/SolutionSection";
+import Industry from "./components/container/IndustrySection";
+import Portofolio from "./components/container/PortofolioSection";
+import Testimonial from "./components/container/TestimonialSection";
+import ContactForm from "./components/container/ContactFormSection";
+import Footer from "./components/container/Footer/Footer";
 
 function App() {
   return (
@@ -9,7 +16,14 @@ function App() {
       <Header />
       <Hero />
       <LogoMarquee />
-      <AchievementSection />
+      <Achievement />
+      <OurProcess />
+      <Solution />
+      <Industry />
+      <Portofolio />
+      <Testimonial />
+      <ContactForm />
+      <Footer />
     </>
   );
 }
