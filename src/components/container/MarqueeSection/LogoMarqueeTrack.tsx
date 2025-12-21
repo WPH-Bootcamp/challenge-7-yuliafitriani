@@ -14,7 +14,7 @@ const logos = [
 
 const LogoMarqueeTrack = () => {
   return (
-    <div className="flex w-max animate-marquee gap-12 mask-[linear-gradient(to_right,transparent_0,black_400px,black_calc(100%-200px),transparent_100%)]">
+    <div className="flex w-max animate-marquee overflow-hidden gap-12 mask-[linear-gradient(to_right,transparent_0,black_400px,black_calc(100%-200px),transparent_100%)]">
       {[...logos, ...logos].map((logo, index) => (
         <LogoItem key={index} src={logo.src} alt={logo.alt} />
       ))}

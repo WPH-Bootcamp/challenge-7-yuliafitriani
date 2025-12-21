@@ -7,6 +7,7 @@ import Solution from "./components/container/SolutionSection";
 import Industry from "./components/container/IndustrySection";
 import Portofolio from "./components/container/PortofolioSection";
 import Testimonial from "./components/container/TestimonialSection";
+import FAQ from "./components/container/FAQSection";
 import ContactForm from "./components/container/ContactFormSection";
 import Footer from "./components/container/Footer/Footer";
 
@@ -22,6 +23,7 @@ function App() {
       <Industry />
       <Portofolio />
       <Testimonial />
+      <FAQ />
       <ContactForm />
       <Footer />
     </>
