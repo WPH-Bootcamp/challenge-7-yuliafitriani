@@ -6,6 +6,7 @@ import CheckboxInput from "../Form/CheckboxInput";
 import TextareaInput from "../../ui/Input/TextareaInput";
 import TextInput from "../../ui/Input/TextInput";
 import Modal from "../Popup";
+import Button from "../../ui/Button";
 
 type Service =
   | "Web Development"
@@ -105,8 +106,8 @@ const ContactForm = () => {
 
             {/* SERVICES */}
             <div>
-              <FormLabel>Service</FormLabel>
-              <div className="grid grid-cols-1 md:grid-cols-2">
+              <FormLabel htmlFor="service">Service</FormLabel>
+              <div id="service" className="grid grid-cols-1 md:grid-cols-2">
                 {services.map((service) => (
                   <CheckboxInput
                     key={service}
@@ -119,26 +120,9 @@ const ContactForm = () => {
             </div>
 
             {/* SUBMIT */}
-            <button
-              type="submit"
-              className="
-            w-full
-            bg-primary-200
-            text-white
-            text-sm
-            font-semibold
-            py-2
-            px-10
-            rounded-full
-            transition-all
-            hover:scale-[1.02]
-            hover:shadow-lg
-            active:scale-95
-            shadow-[inset_4px_4px_4px_0px_#FFFFFF40]
-          "
-            >
-              Send
-            </button>
+            <Button className="w-full" disabled={loading}>
+              {loading ? "Sending..." : "Send"}
+            </Button>
           </form>
         </div>
       </section>

@@ -60,7 +60,7 @@ const solutionsData: SolutionItem[] = [
 const Solution = () => {
   return (
     <section className="px-4 w-full mx-auto lg:w-[1160px] pt-20 py-10">
-      <div className="text-center">
+      <div className="text-center w-full mx-auto">
         <HeaderText>Smart IT Solutions That Grow With You</HeaderText>
         <SubHeaderText>
           Tailored tech to boost efficiency, security, and results.

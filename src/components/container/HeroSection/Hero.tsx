@@ -8,20 +8,23 @@ const Hero = () => {
           items-center
           grid-rows
           md:grid-cols-2 
-          mx-4
-          lg:mx-0
+          mx-0
+          lg:mx-4
+          md:mx-4
+          overflow-hidden
           "
     >
       {/* LEFT CONTENT */}
-      <div className="w-auto h-[370px] lg:w-[653px] lg:h-[300px] relative lg:px-0 ">
+      <div className="mx-4 lg:w-[653px]">
         <div
           className="
           mt-[125px]
           w-full
           lg:mt-0
+          md:mt-0
         "
         >
-          <h1 className="text-4xl lg:text-7xl font-bold text-nowrap dark:text-dark-neutral-25">
+          <h1 className="text-4xl lg:text-7xl font-bold dark:text-dark-neutral-25 lg:text-nowrap">
             Your Tech Partner for
             <br />
             <span className="text-primary-200">Smarter Growth</span>
@@ -32,13 +35,13 @@ const Hero = () => {
             confidence.
           </p>
         </div>
-        <div className="absolute bottom-0 w-full">
+        <div className="mt-5 w-full">
           <Button className="w-full lg:w-[200px]">Let's Talk</Button>
         </div>
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="-z-10 -mx-4 md:min-h-[747px] md:h-[747px]">
+      <div className="-z-10 md:min-h-[747px] md:h-[747px]">
         {/* Light */}
         <img
           src="/assets/images/hero.jpg"
@@ -49,7 +52,7 @@ const Hero = () => {
         {/* Dark */}
         <img
           src="/assets/images/hero-dark.png"
-          className="hidden md:absolute md:top-0 md:right-0 md:max-h-[800px] md:h-[700px] dark:block"
+          className="hidden md:absolute md:top-0  md:right-0 md:max-h-[800px] md:h-[700px] dark:block"
           alt="Your Tech Partner"
         />
       </div>

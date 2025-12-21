@@ -13,7 +13,7 @@ export const TestimonialCard = ({
 }: TestimonialCardProps) => {
   return (
     <div className="py-8 h-full">
-      <div className="relative flex flex-col items-center bg-[#FAFAFA] dark:bg-[#0A0D12] border border-[#DEDCDC] dark:border-[#181D27] hover:border-orange-500 transition-colors duration-300 rounded-2xl p-8 text-center h-full pb-16">
+      <div className="relative flex flex-col items-center bg-[#FAFAFA] dark:bg-[#0A0D12] border border-[#DEDCDC] dark:border-[#181D27] hover:-translate-y-1 hover:border-orange-500 hover:shadow-[0_12px_30px_rgba(0,0,0,0.08)] transition-colors duration-300 rounded-2xl p-8 text-center h-full pb-16">
         {/* Quote icon */}
         <img
           src="/assets/images/testimonial-icon.svg"

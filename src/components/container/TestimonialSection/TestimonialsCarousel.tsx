@@ -36,16 +36,13 @@ export default function TestimonialsCarousel() {
   return (
     <div className="relative py-12 my-12">
       {/* Carousel */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden lg:grid lg:grid-cols-3 md:grid md:grid-cols-2">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="pl-4 basis-full md:basis-1/2 lg:basis-1/3 shrink-0"
-            >
+            <div key={i} className="pl-4 basis-full shrink-0">
               <TestimonialCard {...t} />
             </div>
           ))}
